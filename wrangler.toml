@@ -1,0 +1,29 @@
+name = "fitness-mcp"
+main = "src/index.ts"
+compatibility_date = "2026-08-01"
+
+# Replace these placeholder ids with resources from your own Cloudflare account.
+
+[[d1_databases]]
+binding = "DB_USER1"
+database_name = "fitness-user1"
+database_id = "REPLACE_WITH_USER1_DATABASE_ID"
+migrations_dir = "migrations"
+
+[[d1_databases]]
+binding = "DB_USER2"
+database_name = "fitness-user2"
+database_id = "REPLACE_WITH_USER2_DATABASE_ID"
+migrations_dir = "migrations"
+
+[[r2_buckets]]
+binding = "PICS"
+bucket_name = "fitness-pics"
+
+[[kv_namespaces]]
+binding = "OAUTH_KV"
+id = "REPLACE_WITH_OAUTH_KV_NAMESPACE_ID"
+
+# Set with `wrangler secret put`; never commit real values:
+# TOKENS_JSON, SIGNING_SECRET, GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET,
+# COOKIE_ENCRYPTION_KEY, USER_EMAILS_JSON

@@ -1,0 +1,8 @@
+# Copy to .dev.vars for local development. Never commit .dev.vars.
+# All values here are intentionally fake and local-only.
+TOKENS_JSON={"user1-local-token":"user1","user2-local-token":"user2"}
+SIGNING_SECRET=local-development-signing-secret
+GOOGLE_CLIENT_ID=test-google-client-id.apps.googleusercontent.com
+GOOGLE_CLIENT_SECRET=test-google-client-secret
+COOKIE_ENCRYPTION_KEY=0000000000000000000000000000000000000000000000000000000000000000
+USER_EMAILS_JSON={"user1@example.com":"user1","user2@example.com":"user2"}
